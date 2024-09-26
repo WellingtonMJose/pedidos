@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    image: pedidos
+    build:
+      context: ./app
+    ports:
+      - "8081:8081"
+    depends_on:
+      - postgres
+      - rabbitmq
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgre
+      POSTGRES_PASSWORD: "@RthuR24"
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  sonarqube:
+    image: sonarqube:latest
+    restart: always
+    ports:
+      - "9000:9000"
+
+  rabbitmq:
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"  # Porta padrão do RabbitMQ
+      - "15672:15672"  # Porta para o painel de controle
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+volumes:
+  postgres_data:
+  rabbitmq_data:
