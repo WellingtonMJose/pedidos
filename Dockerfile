@@ -1,5 +1,9 @@
-FROM eclipse-temurin:21-jdk-alpine
-VOLUME /tmp
-COPY target/pedidos-0.0.1-SNAPSHOT.jar pedidos.jar
+FROM eclipse-temurin:21-jdk-alpine AS build
+WORKDIR /app
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package
+WORKDIR /app
+COPY --from=build /app/target/pedidos.jar ./pedidos.jar
 
-ENTRYPOINT ["java","-jar","/pedidos.jar"]
+CMD ["java", "-jar", "pedidos.jar"]
