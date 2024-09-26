@@ -29,13 +29,6 @@
     <properties>
         <java.version>21</java.version>
         <sonar.scm.enabled>false</sonar.scm.enabled>
-        <!--        <sonar.token>fOZapoXtFuNVFkAaFfredExDJhWcqsVr7k3cpSOWsjU=</sonar.token>-->
-        <!--		<sonar.exclude>**/dto/**/*</sonar.exclude>-->
-        <!--		<sonar.exclude>**/config/**/*</sonar.exclude>-->
-        <!--		<sonar.exclude>**/repository/**/*</sonar.exclude>-->
-
-        <!--		<sonar.exclude>**/entity/**/*</sonar.exclude>-->
-        <!--		<sonar.exclude>**/exception/**/*</sonar.exclude>-->
     </properties>
     <dependencies>
         <dependency>
