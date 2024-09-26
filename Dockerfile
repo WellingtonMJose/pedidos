@@ -1,9 +1,4 @@
-FROM maven:3.8.6-openjdk-21 AS build
-FROM eclipse-temurin:21-jdk-alpine
-WORKDIR /app
-COPY pom.xml .
-COPY src ./src
-RUN mvn clean package
-COPY --from=build /app/target/pedidos.jar ./pedidos.jar
-
-CMD ["java", "-jar", "pedidos.jar"]
+FROM eclipse-temurin:21
+RUN mkdir /opt/app
+COPY pedidos.jar /opt/app
+CMD ["java", "-jar", "/opt/app/pedidos.jar"]
