@@ -56,6 +56,29 @@ Mensageria: Utilizado para comunicação assíncrona entre os componentes.
  ![image](https://github.com/user-attachments/assets/4f371711-e7e0-4cba-9a2b-e4a5967b586f)
  ![image](https://github.com/user-attachments/assets/75c21aa6-af35-4a35-8692-8ef3a7338541)
 
+ Json de exemplo
+ {
+    "codigoPedido": 25,
+    "codigoCliente": 1,
+    "itens": [
+        {
+            "produto": "Mesa",
+            "quantidade": 2,
+            "preco": 799.99
+        },
+        {
+            "produto": "Cadeira",
+            "quantidade": 4,
+            "preco": 999.99
+        },
+        {
+            "produto": "Armario de cozinha",
+            "quantidade": 1,
+            "preco": 1449.00
+        }
+    ]
+}
+
 
 
 
