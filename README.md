@@ -35,26 +35,28 @@ Banco de dados: Armazena as informações dos pedidos.
 Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 #### Tecnologias Utilizadas
 
-- Linguagem: Java 21 ![image](https://github.com/user-attachments/assets/eb457d1f-b8e9-44fe-9e43-b1163d0afa74)
+- Linguagem: Java 21
 - IDE: IntellijIdea
 - Framework: Spring Boot
 - Banco de dados: PostgreSQL
 - Mensageria: RabbitMQ
+- Postman
 - Swagger Link da aplicação: [Swagger](https://pedidos-0hqf.onrender.com/swagger-ui/index.html)
 
  
-  ![image](https://github.com/user-attachments/assets/62018720-bf40-4aea-8deb-b589763fdffc)
-  ![image](https://github.com/user-attachments/assets/6648ec17-cca3-47fd-ba42-a3639076862c)
- ![image](https://github.com/user-attachments/assets/312c7357-c5a0-479f-829b-271768e91092)
- ![image](https://github.com/user-attachments/assets/4093d484-a277-4e60-9c80-e863b42c6c43)
- ![image](https://github.com/user-attachments/assets/8ea44f95-963e-4fca-86cc-3d9cd990b503)
- ![image](https://github.com/user-attachments/assets/b7fe7098-73f1-4093-becf-2d2bacaee48c)
-  ![image](https://github.com/user-attachments/assets/a9a1a220-f030-4b9e-ac16-6a3605b3bff2)
-  
- ![image](https://github.com/user-attachments/assets/19a9a748-58fa-4865-8dc2-8eb30589cb3a)
- ![desafio - public](https://github.com/user-attachments/assets/5347ef06-2f99-45ed-aa87-f738de7b559b)
- ![image](https://github.com/user-attachments/assets/4f371711-e7e0-4cba-9a2b-e4a5967b586f)
- ![image](https://github.com/user-attachments/assets/75c21aa6-af35-4a35-8692-8ef3a7338541)
+<img src="../pedidos/asset/java_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/docker.png" width="40px" height="30px">
+<img src="../pedidos/asset/github_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/postgres_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/rabbit_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/cloud_amqp_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/render_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/swagger_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/postman_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/dbeaver_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/intellijidea_logo.png" width="40px" height="30px">
+<img src="../pedidos/asset/spring_logo.png" width="40px" height="30px">
+
 
  Json de exemplo
  {
