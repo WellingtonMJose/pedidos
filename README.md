@@ -40,3 +40,5 @@ Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 - Framework: Spring Boot
 - Banco de dados: PostgreSQL
 - Mensageria: RabbitMQ
+
+[Swagger](https://pedidos-0hqf.onrender.com/swagger-ui/index.html)
