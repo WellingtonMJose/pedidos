@@ -63,7 +63,7 @@ Descrição do Diagrama de Infraestrutura<br>
 A aplicação "Pedidos" está hospedada na Render na região de Oregon (US West).<br>
 A aplicação possui recursos de 0.1 CPU e 512 MB de memória.<br>
 A aplicação está registrada no repositório GitHub. https://github.com/WellingtonMJose/pedidos<br>
-A URL da aplicação é https://pedidos-0hqf.onrender.com.<br>
+A URL da aplicação é https://pedidos-0hqf.onrender.com/swagger-ui/index.html.<br>
 
 ## Evidência de testes
 Imagem da exchange criada, já com o binding na Queue <br>
