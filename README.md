@@ -20,19 +20,6 @@ Sistema que recebe pedidos de clientes e guarda em base de dados para que possa 
 - Validações das funcionalidades;
 - Gerações de evidências;
 
-## Arquitetura da Aplicação
-
-A aplicação adota uma arquitetura monolítica, centralizando toda a lógica de negócio em um único aplicativo. Essa escolha foi feita devido à simplicidade do projeto e ao baixo volume de transações esperado.
-
-#### Diagrama de Componentes
-
-
-O diagrama acima mostra os principais componentes da aplicação:
-
-**API REST**: Expor a funcionalidade da aplicação através de uma API REST.
-Serviço de negócios: Contém a lógica de negócio da aplicação, incluindo o processamento de pedidos e a geração de relatórios.
-Banco de dados: Armazena as informações dos pedidos.
-Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 #### Tecnologias Utilizadas
 
 - Linguagem: Java 21
@@ -43,7 +30,6 @@ Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 - Postman
 - Swagger Link da aplicação: [Swagger](https://pedidos-0hqf.onrender.com/swagger-ui/index.html)
 
- 
 <img src="../pedidos/asset/java_logo.png" width="40px" height="30px">
 <img src="../pedidos/asset/docker.png" width="40px" height="30px">
 <img src="../pedidos/asset/github_logo.png" width="40px" height="30px">
@@ -57,37 +43,64 @@ Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 <img src="../pedidos/asset/intellijidea_logo.png" width="40px" height="30px">
 <img src="../pedidos/asset/spring_logo.png" width="40px" height="30px">
 
+## Diagrama de arquitetura
 
- Json de exemplo
- {
-    "codigoPedido": 25,
-    "codigoCliente": 1,
-    "itens": [
-        {
-            "produto": "Mesa",
-            "quantidade": 2,
-            "preco": 799.99
-        },
-        {
-            "produto": "Cadeira",
-            "quantidade": 4,
-            "preco": 999.99
-        },
-        {
-            "produto": "Armario de cozinha",
-            "quantidade": 1,
-            "preco": 1449.00
-        }
-    ]
-}
+<img src="../pedidos/asset/diagrama_arquitetura.png" width="500px">
+
+## Modelagem de dados
+Por se tratar de uma aplicação simples foi criado apenas 3 tabelas <br>
+<img src="../pedidos/asset/diagrama_entidade.png" width="500px">
+
+##  Diagrama de implantação
+<img src="../pedidos/asset/diagrama_arquiteturan.png" width="500px" >
+
+## Diagrama de infra
+<img src="../pedidos/asset/diagrama_infra.png" width="500px" ><br>
+Descrição do Diagrama de Infraestrutura<br>
+A aplicação "Pedidos" está hospedada na Render na região de Oregon (US West).<br>
+A aplicação possui recursos de 0.1 CPU e 512 MB de memória.<br>
+A aplicação está registrada no repositório GitHub. https://github.com/WellingtonMJose/pedidos<br>
+A URL da aplicação é https://pedidos-0hqf.onrender.com.<br>
+
+## Evidência de testes
+Imagem da exchange criada, já com o binding na Queue <br>
+<img src="../pedidos/asset/exchange_rabbit.png" width="500px"><br>
+
+Imagem do envio de um pedido<br>
+<img src="../pedidos/asset/request_rabbit.png" width="500px">
+
+Imagem dos dados salvos na tabela de item_pedido<br>
+<img src="../pedidos/asset/itens_pedido_database.png" width="500px"><br>
+
+Imagem da busca do pedido via id<br>
+<img src="../pedidos/asset/busca_id_pedido.png" width="500px">
+
+Imagem da busca de todos os pedidos do cliente via id<br>
+<img src="../pedidos/asset/busca_lista_todos_pedido_cliente.png" width="500px">
+
+Imagem da busca de quantidade de pedidos do cliente via id<br>
+<img src="../pedidos/asset/busca_qtd_pedidos_cliente.png" width="500px">
+
+Imagem da busca de valor total do pedido do cliente via id<br>
+<img src="../pedidos/asset/busca_qtd_pedidos_cliente.png" width="500px">
+
+A aplicação adota uma arquitetura monolítica, centralizando toda a lógica de negócio em um único aplicativo.<br>
+Essa escolha foi feita devido à simplicidade do projeto e ao baixo volume de transações esperado.<br>
 
 
+<img src="../pedidos/asset/diagrama.png" width="500px" height="300px">
 
 
+**API REST**: <br>
+Expor a funcionalidade da aplicação através de uma API REST.<br>
+Serviço de negócios: Contém a lógica de negócio da aplicação, incluindo o processamento de pedidos e a geração de relatórios.<br>
+Banco de dados: Armazena as informações dos pedidos.<br>
+**Event-Driven**: <br>
+Mensageria: Utilizado para comunicação assíncrona entre os componentes.
 
-
-
-
+### Obs:
+Foi incluido um endpoint para auxiliar os testes, é um serviço com o metodo POST para salva o cliente trazendo mais facilidades nos testes,
+não estava no escopo do projeto mas foi necessário pela praticidade.
 
 
 

@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "cliente": {
+      "id": 1,
+      "nome": "Rafael Toreto"
+    },
+    "itens": [
+      {
+        "quantidade": 10,
+        "preco": 14.5,
+        "subtotal": 145
+      },
+      {
+        "quantidade": 100,
+        "preco": 0.8,
+        "subtotal": 80
+      },
+      {
+        "quantidade": 200,
+        "preco": 0.75,
+        "subtotal": 150
+      }
+    ],
+    "valorTotalFormatado": "R$ 375,00",
+    "valorTotal": 375
+  },
+  {
+    "id": 25,
+    "cliente": {
+      "id": 1,
+      "nome": "Rafael Toreto"
+    },
+    "itens": [
+      {
+        "quantidade": 1,
+        "preco": 1449,
+        "subtotal": 1449
+      },
+      {
+        "quantidade": 4,
+        "preco": 999.99,
+        "subtotal": 3999.96
+      },
+      {
+        "quantidade": 2,
+        "preco": 799.99,
+        "subtotal": 1599.98
+      }
+    ],
+    "valorTotalFormatado": "R$ 7.048,94",
+    "valorTotal": 7048.9400000000005
+  }
+]
