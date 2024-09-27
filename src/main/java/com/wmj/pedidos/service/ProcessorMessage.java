@@ -28,9 +28,10 @@ public class ProcessorMessage {
         try (JsonReader jsonReader = Json.createReader(new StringReader(message))) {
             JsonObject jsonObject = jsonReader.readObject();
             pedidoService.insert(jsonObject);
+            log.info("Pedido processado com sucesso");
         } catch (JsonException e) {
-            log.severe("Erro processar pedido: " + e.getMessage());
-            throw new JsonException("Erro processar pedido: " + e.getMessage());
+            log.severe("Erro ao processar pedido: " + e.getMessage());
+            throw new JsonException("Erro ao processar pedido: " + e.getMessage());
         }
     }
 }
